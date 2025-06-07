@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites name="vitest tests" tests="1" failures="1" errors="0" time="0.021686311">
-    <testsuite name="src/pages/Home/HomePage.test.tsx" timestamp="2025-06-07T14:47:30.520Z" hostname="undefined-MS-7D46" tests="1" failures="1" errors="0" skipped="0" time="0.021686311">
-        <testcase classname="src/pages/Home/HomePage.test.tsx" name="HomePage &gt; renders the &quot;Welcome&quot; text" time="0.02052818">
-            <failure message="Invalid Chai property: toBeInTheDocument" type="Error">
-Error: Invalid Chai property: toBeInTheDocument
- ❯ src/pages/Home/HomePage.test.tsx:7:39
-            </failure>
+<testsuites name="vitest tests" tests="1" failures="0" errors="0" time="0.017789989">
+    <testsuite name="src/pages/Home/HomePage.test.tsx" timestamp="2025-06-07T15:08:50.961Z" hostname="undefined-MS-7D46" tests="1" failures="0" errors="0" skipped="0" time="0.017789989">
+        <testcase classname="src/pages/Home/HomePage.test.tsx" name="HomePage &gt; renders the &quot;Welcome&quot; text" time="0.016824309">
         </testcase>
     </testsuite>
 </testsuites>

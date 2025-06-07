@@ -4,6 +4,7 @@
 echo "Running pre-commit checks..."
 
 npm run check:fix || exit 1
+npm run test:coverage || exit 1
 
 git add .
 
