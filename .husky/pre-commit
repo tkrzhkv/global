@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "Running pre-commit checks..."
+
+npm run check:fix || exit 1
+
+git add .
+
+echo "Pre-commit checks finished."
