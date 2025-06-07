@@ -7,7 +7,7 @@ import { type IRouteDescription, RouteNames } from './routes';
 
 const HomePage = lazy(() => import('../pages/Home/HomePage'));
 
-const { LOGIN, HOME } = RouteNames;
+const { HOME } = RouteNames;
 
 const routes: IRouteDescription[] = [
   {
