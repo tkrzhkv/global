@@ -41,7 +41,7 @@ jobs:
         run: npm install --immutable
 
       - name: Run Test
-        run: npm run test:ci
+        run: npm run test:coverage:ci
 
 
       - name: Upload JUnit Test Report
