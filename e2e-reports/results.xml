@@ -1,2 +1,32 @@
-<testsuites id="" name="" tests="0" failures="0" skipped="0" errors="0" time="0.004134999999999991">
+<testsuites id="" name="" tests="12" failures="0" skipped="0" errors="0" time="7.450178">
+<testsuite name="registration.spec.ts" timestamp="2025-06-08T11:16:46.354Z" hostname="chromium" tests="4" failures="0" skipped="0" time="4.963" errors="0">
+<testcase name="Registration Page › should display both Email and Anonymous registration forms" classname="registration.spec.ts" time="0.759">
+</testcase>
+<testcase name="Registration Page › should generate anonymous code and display copy/login options" classname="registration.spec.ts" time="2.661">
+</testcase>
+<testcase name="Registration Page › should show loading states during email registration submission" classname="registration.spec.ts" time="0.782">
+</testcase>
+<testcase name="Registration Page › should show loading states during anonymous code generation" classname="registration.spec.ts" time="0.761">
+</testcase>
+</testsuite>
+<testsuite name="registration.spec.ts" timestamp="2025-06-08T11:16:46.354Z" hostname="firefox" tests="4" failures="0" skipped="0" time="7.66" errors="0">
+<testcase name="Registration Page › should display both Email and Anonymous registration forms" classname="registration.spec.ts" time="1.282">
+</testcase>
+<testcase name="Registration Page › should generate anonymous code and display copy/login options" classname="registration.spec.ts" time="3.348">
+</testcase>
+<testcase name="Registration Page › should show loading states during email registration submission" classname="registration.spec.ts" time="1.525">
+</testcase>
+<testcase name="Registration Page › should show loading states during anonymous code generation" classname="registration.spec.ts" time="1.505">
+</testcase>
+</testsuite>
+<testsuite name="registration.spec.ts" timestamp="2025-06-08T11:16:46.354Z" hostname="webkit" tests="4" failures="0" skipped="0" time="7.33" errors="0">
+<testcase name="Registration Page › should display both Email and Anonymous registration forms" classname="registration.spec.ts" time="1.258">
+</testcase>
+<testcase name="Registration Page › should generate anonymous code and display copy/login options" classname="registration.spec.ts" time="3.318">
+</testcase>
+<testcase name="Registration Page › should show loading states during email registration submission" classname="registration.spec.ts" time="1.395">
+</testcase>
+<testcase name="Registration Page › should show loading states during anonymous code generation" classname="registration.spec.ts" time="1.359">
+</testcase>
+</testsuite>
 </testsuites>

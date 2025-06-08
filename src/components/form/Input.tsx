@@ -21,6 +21,7 @@ export type InputFormProps<
   type?: string;
   placeholder?: string;
   label?: string;
+  testID?: string;
 };
 
 export const Input = <
@@ -29,7 +30,7 @@ export const Input = <
 >(
   props: InputFormProps<TFieldValuesType, TNameType>,
 ): ReactElement => {
-  const { control, name, type, placeholder, label } = props;
+  const { control, name, type, placeholder, label, testID } = props;
 
   const { field, fieldState } = useController({ name, control });
 
@@ -42,9 +43,10 @@ export const Input = <
         value={field.value || ''}
         type={type ?? 'text'}
         placeholder={placeholder}
+        data-testid={testID}
       />
 
-      <Text color="red.600" fontSize="12px">
+      <Text data-testid="formElementError" color="red.600" fontSize="12px">
         {fieldState?.error?.message}
       </Text>
     </FormControl>
