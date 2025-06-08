@@ -1,3 +1,4 @@
+import path from 'node:path';
 import react from '@vitejs/plugin-react';
 import { type UserConfig, defineConfig } from 'vite';
 import biomePlugin from 'vite-plugin-biome';
@@ -5,6 +6,11 @@ import biomePlugin from 'vite-plugin-biome';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), biomePlugin()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
   test: {
     environment: 'jsdom',
     globals: true,

@@ -1,9 +1,9 @@
+import { Fallback } from '@/components/Fallback';
 import { ChakraProvider, theme } from '@chakra-ui/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { type FC, type ReactNode, useState } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import { BrowserRouter } from 'react-router';
-import { Fallback } from '../components/Fallback';
 
 interface IProviders {
   readonly children: ReactNode;

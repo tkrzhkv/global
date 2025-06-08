@@ -19,12 +19,8 @@ export const getPostV1UserRegisterCodeResponseMock = (
 ): RegisterCodeSuccess => ({
   data: faker.helpers.arrayElement([
     {
-      login_code: faker.helpers.arrayElement([
-        faker.string.alpha(20),
-        undefined,
-      ]),
+      login_code: faker.string.numeric(16),
     },
-    undefined,
   ]),
   ...overrideResponse,
 });
@@ -37,7 +33,6 @@ export const getPostV1UserRegisterEmailResponseMock = (
       { length: faker.number.int({ min: 1, max: 10 }) },
       (_, i) => i + 1,
     ).map(() => ({})),
-    undefined,
   ]),
   ...overrideResponse,
 });
@@ -47,9 +42,8 @@ export const getPostV1AuthLoginEmailResponseMock = (
 ): SessionSuccess => ({
   data: faker.helpers.arrayElement([
     {
-      session: faker.helpers.arrayElement([faker.string.alpha(20), undefined]),
+      session: faker.helpers.arrayElement([faker.string.alpha(20)]),
     },
-    undefined,
   ]),
   ...overrideResponse,
 });
@@ -59,9 +53,8 @@ export const getPostV1AuthLoginCodeResponseMock = (
 ): SessionSuccess => ({
   data: faker.helpers.arrayElement([
     {
-      session: faker.helpers.arrayElement([faker.string.alpha(20), undefined]),
+      session: faker.helpers.arrayElement([faker.string.alpha(20)]),
     },
-    undefined,
   ]),
   ...overrideResponse,
 });
@@ -71,9 +64,8 @@ export const getPostV1UserRegisterGoogleAccountResponseMock = (
 ): SessionSuccess => ({
   data: faker.helpers.arrayElement([
     {
-      session: faker.helpers.arrayElement([faker.string.alpha(20), undefined]),
+      session: faker.helpers.arrayElement([faker.string.alpha(20)]),
     },
-    undefined,
   ]),
   ...overrideResponse,
 });

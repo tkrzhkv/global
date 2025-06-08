@@ -9,6 +9,7 @@ paths:
   /v1/user/register/code:
     post:
       summary: Регистрация анонимно (получить login_code)
+      operationId: postV1UserRegisterCode
       requestBody:
         required: true
         content:
@@ -27,6 +28,7 @@ paths:
   /v1/user/register/email:
     post:
       summary: Регистрация / авторизация по email
+      operationId: postV1UserRegisterEmail
       requestBody:
         required: true
         content:
@@ -50,6 +52,7 @@ paths:
   /v1/auth/login/email:
     post:
       summary: Вход по email + 6-значный PIN
+      operationId: postV1AuthLoginEmail
       requestBody:
         required: true
         content:
@@ -73,6 +76,7 @@ paths:
   /v1/auth/login/code:
     post:
       summary: Вход анонимным login_code
+      operationId: postV1AuthLoginCode
       requestBody:
         required: true
         content:
@@ -96,6 +100,7 @@ paths:
   /v1/user/register/google_account:
     post:
       summary: Регистрация / авторизация через Google (OAuth)
+      operationId: postV1UserRegisterGoogleAccount
       requestBody:
         required: true
         content:

@@ -1,23 +1,43 @@
+import { SuspenseLayout } from '@/components/Layouts/SuspenseLayout';
+import { NotFoundPage } from '@/components/NotFoundPage';
 import { motion } from 'framer-motion';
 import { lazy } from 'react';
 import { Route, Routes } from 'react-router';
-import { SuspenseLayout } from '../components/Layouts/SuspenseLayout';
-import { NotFoundPage } from '../components/NotFoundPage';
 import { type IRouteDescription, RouteNames } from './routes';
 
-const HomePage = lazy(() => import('../pages/Home/HomePage'));
+const HomePage = lazy(() => import('@/pages/Home/HomePage'));
+const RegistrationPage = lazy(
+  () => import('@/pages/Auth/Registration/RegistrationPage'),
+);
+const EnterPinPage = lazy(() => import('@/pages/Auth/Login/EnterPinPage'));
+const LoginPage = lazy(() => import('@/pages/Auth/Login/LoginPage'));
+const CodeGeneratedPage = lazy(
+  () => import('@/pages/Auth/Registration/components/CodeGenerated'),
+);
 
-const { HOME } = RouteNames;
+const { HOME, REGISTRATION, REGISTRATION_CODE, AUTH, AUTH_EMAIL } = RouteNames;
 
 const routes: IRouteDescription[] = [
   {
     path: HOME,
     component: HomePage,
   },
-  // {
-  //   path: LOGIN,
-  //   component: LoginPage,
-  // },
+  {
+    path: REGISTRATION,
+    component: RegistrationPage,
+  },
+  {
+    path: AUTH_EMAIL,
+    component: EnterPinPage,
+  },
+  {
+    path: AUTH,
+    component: LoginPage,
+  },
+  {
+    path: REGISTRATION_CODE,
+    component: CodeGeneratedPage,
+  },
 ];
 
 const routesContent = routes.map(({ path, component: Component }) => (

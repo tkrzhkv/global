@@ -12,6 +12,7 @@
       "coverage-reports/",
       "dist/",
       "node_modules/",
+      "public/",
       "build/",
       "lighthouse-report/",
       "e2e-reports/",

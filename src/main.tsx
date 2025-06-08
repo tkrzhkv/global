@@ -10,7 +10,17 @@ if (!container) {
 
 if (import.meta.env.DEV) {
   import('./mocks/browser').then(({ worker }) => {
-    worker.start();
+    worker
+      .start({
+        onUnhandledRequest: 'warn',
+        serviceWorker: {
+          url: '/mockServiceWorker.js',
+        },
+      })
+      .then(() => {})
+      .catch((error) => {
+        console.error('Failed to start MSW Worker:', error);
+      });
   });
 }
 
